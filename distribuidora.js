@@ -51,6 +51,6 @@ const mediaReceita = soma / diasComReceita.length;
 const diasAcimaDaMedia = diasComReceita.filter(r => r.valor > mediaReceita).length;
 
 
-console.log("Menor valor de faturamento:", menorReceita.toFixed(2));
-console.log("Maior valor de faturamento:", maiorReceita.toFixed(2));
+console.log("Menor valor de faturamento:", formatNumberBR(menorReceita));
+console.log("Maior valor de faturamento:", formatNumberBR(maiorReceita));
 console.log("Número de dias com faturamento acima da média:", diasAcimaDaMedia);
